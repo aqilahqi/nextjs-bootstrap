@@ -25,6 +25,17 @@ button {
     }
 }
 
+.brands-section {
+    p {
+        letter-spacing: -1px;
+    }
+    img {
+        &.brands {
+            height: 20px;
+        }
+    }
+}
+
 
 /** END: Global stylings */
 
