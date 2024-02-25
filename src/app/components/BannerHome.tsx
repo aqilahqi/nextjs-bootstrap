@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface Props {
   image: String;
@@ -13,7 +14,7 @@ const BannerHome = (props: Props) => {
       <div className='circle top bg-tertiary' />
       <div className='circle bottom bg-secondary' />
       <div className='container content d-md-flex align-items-center'>
-        <img
+        <Image
           src={`${image}`}
           className='img-fluid order-2 mb-3 mb-lg-0'
           alt='image'

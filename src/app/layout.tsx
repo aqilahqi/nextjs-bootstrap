@@ -1,3 +1,5 @@
+import React from 'react';
+
 import './styles/globals.scss';
 import 'material-symbols';
 import type { Metadata } from 'next';

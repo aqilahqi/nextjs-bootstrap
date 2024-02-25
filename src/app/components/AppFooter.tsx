@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Image from 'next/image';
 const AppFooter = () => {
   const exploreLinks = [
     {
@@ -37,16 +37,16 @@ const AppFooter = () => {
             </h3>
             <div className='d-flex'>
               <a href='#' className='me-3'>
-                <img src='/images/linkedin.png' alt='linkedin' />
+                <Image src='/images/linkedin.png' alt='linkedin' />
               </a>
               <a href='#' className='me-3'>
-                <img src='/images/facebook.png' alt='facebook' />
+                <Image src='/images/facebook.png' alt='facebook' />
               </a>
               <a href='#' className='me-3'>
-                <img src='/images/instagram.png' alt='instagram' />
+                <Image src='/images/instagram.png' alt='instagram' />
               </a>
               <a href='#' className='me-3'>
-                <img src='/images/twitter.png' alt='twitter' />
+                <Image src='/images/twitter.png' alt='twitter' />
               </a>
             </div>
           </div>

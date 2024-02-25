@@ -1,5 +1,4 @@
 import React from 'react';
-import Job from './JobCard';
 import JobCard from './JobCard';
 
 interface Job {
@@ -15,11 +14,6 @@ interface Job {
 
 const JobSlider = (props: any) => {
   const { jobs } = props;
-  const sliders = [];
-
-  const carousel = jobs.sort((a: Job, b: Job) => {
-    return a.order - b.order;
-  });
 
   return (
     <div>

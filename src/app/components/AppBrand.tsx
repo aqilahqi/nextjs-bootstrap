@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const AppBrand = (props: any) => {
   const { brands } = props;
@@ -10,8 +11,8 @@ const AppBrand = (props: any) => {
         </p>
         <div className='d-flex flex-wrap justify-content-around justify-content-lg-between'>
           {brands.length > 0 &&
-            brands.map((brand, index) => (
-              <img
+            brands.map((brand: string, index: number) => (
+              <Image
                 src={`${brand}`}
                 className='brands img-fluid mb-3'
                 alt='image'

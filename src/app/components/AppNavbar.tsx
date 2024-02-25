@@ -66,7 +66,7 @@ const AppNavbar = () => {
           <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
             {menu.map((m, index) =>
               m.children.length > 0 ? (
-                <li key={index} className='nav-item dropdown me-4' key={index}>
+                <li key={index} className='nav-item dropdown me-4'>
                   <a
                     className='nav-link dropdown-toggle'
                     href='#'
@@ -77,7 +77,7 @@ const AppNavbar = () => {
                     {m.label}
                   </a>
                   <ul className='dropdown-menu'>
-                    {m.children.map((child, index) => (
+                    {m.children.map((child) => (
                       <li key={child.label}>
                         <a className='dropdown-item' href={child.link}>
                           {child.label}
