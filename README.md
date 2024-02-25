@@ -21,4 +21,4 @@ Looking forward to join the team ✨
 
 ## Preview
 
-Preview the assessement [here]()
+Preview the assessment [here](https://nextjs-bootstrap-nine.vercel.app/)
