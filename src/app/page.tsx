@@ -1,38 +1,11 @@
 import React from 'react';
+import Banner from './components/BannerHome';
 
 const page = () => {
   return (
-    <div className='p-2'>
+    <div>
       <div>
-        <button type='button' className='btn btn-primary'>
-          Primary
-        </button>
-
-        <button
-          className='btn btn-dark dropdown-toggle'
-          type='button'
-          data-bs-toggle='dropdown'
-          aria-expanded='false'
-        >
-          Dropdown button
-        </button>
-        <ul className='dropdown-menu'>
-          <li>
-            <a className='dropdown-item' href='#'>
-              Action
-            </a>
-          </li>
-          <li>
-            <a className='dropdown-item' href='#'>
-              Another action
-            </a>
-          </li>
-          <li>
-            <a className='dropdown-item' href='#'>
-              Something else here
-            </a>
-          </li>
-        </ul>
+        <Banner />
       </div>
     </div>
   );

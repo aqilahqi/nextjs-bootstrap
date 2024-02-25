@@ -1,13 +1,31 @@
-@import "bootstrap/scss/bootstrap";
+
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
-@import "bootstrap/scss/mixins";
 @import 'variables';
+@import "bootstrap//scss/bootstrap.scss";
+@import 'banners';
+@import 'forms';
 
 /** START: Global stylings */
 
+nav {
+    &.navbar {
+        min-height: 84px;
+    }
+}
+
+.nav-link.dropdown-toggle::after {
+    color: $primary;
+}
+
+button {
+    &.btn {
+        border-radius: 30px;
+        padding: 12px 20px;
+    }
+}
 
 
 /** END: Global stylings */
 
-@import "bootstrap";
+

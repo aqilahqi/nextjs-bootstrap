@@ -1,11 +1,54 @@
 import React from 'react';
 
 const AppNavbar = () => {
+  const menu = [
+    {
+      label: 'For jobseeker',
+      link: '',
+      children: [
+        {
+          label: 'Link',
+          link: '#',
+        },
+      ],
+    },
+    {
+      label: 'For clients',
+      link: '',
+      children: [
+        {
+          label: 'Link',
+          link: '#',
+        },
+      ],
+    },
+    {
+      label: 'Sectors',
+      link: '',
+      children: [
+        {
+          label: 'Link',
+          link: '#',
+        },
+      ],
+    },
+    {
+      label: 'Resources',
+      link: '',
+      children: [
+        {
+          label: 'Link',
+          link: '#',
+        },
+      ],
+    },
+  ];
+
   return (
-    <nav className='navbar navbar-expand-lg bg-body-tertiary'>
-      <div className='container-fluid'>
-        <a className='navbar-brand' href='#'>
-          Navbar
+    <nav className='navbar navbar-expand-xl'>
+      <div className='container'>
+        <a className='navbar-brand fw-bold text-primary fs-5 me-5' href='#'>
+          Software Recruitment co.
         </a>
         <button
           className='navbar-toggler'
@@ -19,65 +62,53 @@ const AppNavbar = () => {
           <span className='navbar-toggler-icon'></span>
         </button>
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
+          {/* left side */}
           <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
-            <li className='nav-item'>
-              <a className='nav-link active' aria-current='page' href='#'>
-                Home
-              </a>
-            </li>
-            <li className='nav-item'>
-              <a className='nav-link' href='#'>
-                Link
-              </a>
-            </li>
-            <li className='nav-item dropdown'>
-              <a
-                className='nav-link dropdown-toggle'
-                href='#'
-                role='button'
-                data-bs-toggle='dropdown'
-                aria-expanded='false'
-              >
-                Dropdown
-              </a>
-              <ul className='dropdown-menu'>
-                <li>
-                  <a className='dropdown-item' href='#'>
-                    Action
+            {menu.map((m, index) =>
+              m.children.length > 0 ? (
+                <li key={index} className='nav-item dropdown me-4'>
+                  <a
+                    className='nav-link dropdown-toggle'
+                    href='#'
+                    role='button'
+                    data-bs-toggle='dropdown'
+                    aria-expanded='false'
+                  >
+                    {m.label}
+                  </a>
+                  <ul className='dropdown-menu'>
+                    {m.children.map((child) => (
+                      <li>
+                        <a className='dropdown-item' href={child.link}>
+                          {child.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ) : (
+                <li key={index}>
+                  <a
+                    className='nav-link active'
+                    aria-current='page'
+                    href={m.link}
+                  >
+                    {m.label}
                   </a>
                 </li>
-                <li>
-                  <a className='dropdown-item' href='#'>
-                    Another action
-                  </a>
-                </li>
-                <li>
-                  <hr className='dropdown-divider' />
-                </li>
-                <li>
-                  <a className='dropdown-item' href='#'>
-                    Something else here
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li className='nav-item'>
-              <a className='nav-link disabled' aria-disabled='true'>
-                Disabled
-              </a>
-            </li>
+              )
+            )}
           </ul>
-          <form className='d-flex' role='search'>
-            <input
-              className='form-control me-2'
-              type='search'
-              placeholder='Search'
-              aria-label='Search'
-            />
-            <button className='btn btn-outline-success' type='submit'>
-              Search
+
+          {/* right side */}
+          <div>
+            <button className='btn btn-secondary text-accent fw-bold me-2'>
+              Upload CV
             </button>
-          </form>
+            <button className='btn btn-tertiary text-accent fw-bold me-2'>
+              Contact Us
+            </button>
+          </div>
         </div>
       </div>
     </nav>

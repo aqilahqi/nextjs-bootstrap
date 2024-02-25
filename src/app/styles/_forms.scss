@@ -1,0 +1,29 @@
+input {
+    @include media-breakpoint-up(xl) {
+        height: 62px;
+    }
+
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #AAAAAA !important;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+        color: #AAAAAA !important;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+        color: #AAAAAA !important;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+        color: #AAAAAA !important;
+    }
+}
+
+.input-group {
+    .form-control {
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+    .input-group-text {
+         border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+}

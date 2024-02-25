@@ -1,0 +1,77 @@
+$circle-size-lg:290px;
+$circle-size:190px;
+
+.banner {
+    &.home-banner {
+        
+        min-height: 300px;
+        position: relative;
+        overflow: hidden;
+        @include media-breakpoint-down(sm) {
+height: calc(100vh - 84px);
+        }
+        @include media-breakpoint-up(lg) {
+            height: calc(100vh - 84px);
+        }
+
+        h1, p {
+            color: #fff;
+        }
+
+        p {
+            @extend .fs-6;
+            @include media-breakpoint-down(lg) {
+                font-size: 14px !important;
+            }
+        }
+
+        h1 {
+            @extend .fs-1;
+            @include media-breakpoint-up(xl) {
+                font-size: 66px !important;
+                line-height: 99px !important;
+            }
+        }
+
+        img {
+            width: 100%;
+             @include media-breakpoint-up(sm) {
+                max-width: 307px;
+             }
+             @include media-breakpoint-up(lg) {
+                max-width: 407px;
+             }
+             @include media-breakpoint-up(xl) {
+                max-width: 507px;
+             }
+        }
+
+        .circle {
+            width: $circle-size;
+            height: $circle-size;
+            position: absolute;
+            border-radius: 50%;
+            z-index: 0;
+            @include media-breakpoint-up(lg) {
+                width: $circle-size-lg;
+                height: $circle-size-lg;
+            }
+            &.top {
+                top: -(calc($circle-size / 2));
+                left: -(calc($circle-size / 2));
+                @include media-breakpoint-up(lg) {
+                    top: -(calc($circle-size-lg / 2));
+                    left: -(calc($circle-size-lg / 2));
+                }
+            }
+            &.bottom {
+                bottom: -10%;
+                right: -4%;
+            }
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+    }
+}

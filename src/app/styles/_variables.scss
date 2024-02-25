@@ -1,14 +1,32 @@
 
-// $primary: #333;
 
-$theme-colors: (
-  "primary": #064EA4,
-  "secondary": #FCDF69,
-  "tertiary": #F99D76,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      #D7E7FB,
-  "dark":       #0E2152
+$primary: #064EA4;
+$secondary: #FCDF69;
+$tertiary: #F99D76;
+$accent: #451B09;
+$light: #D7E7FB;
+$dark: #0E2152;
+$dark-1: #25210E;
+
+$custom-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "tertiary": $tertiary,
+  "accent": $accent,
+  "light": $light,
+  "dark": $dark,
+  "dark-1": $dark-1,
 );
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+$custom-containers: (
+  // sm: 540px,
+  // md: 720px,
+  // lg: 960px,
+  // xl: 1140px,
+  xxl: 1200px
+);
+
+$container-max-widths: map-merge($container-max-widths, $custom-containers);
