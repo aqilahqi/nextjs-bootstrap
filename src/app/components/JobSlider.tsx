@@ -34,6 +34,7 @@ const JobSlider = (props: any) => {
                 ? 'tertiary'
                 : 'secondary'
             }
+            key={job.order}
           />
         ))}
       </div>

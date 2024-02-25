@@ -10,11 +10,12 @@ const AppBrand = (props: any) => {
         </p>
         <div className='d-flex flex-wrap justify-content-around justify-content-lg-between'>
           {brands.length > 0 &&
-            brands.map((brand: string) => (
+            brands.map((brand, index) => (
               <img
                 src={`${brand}`}
                 className='brands img-fluid mb-3'
                 alt='image'
+                key={index}
               />
             ))}
         </div>

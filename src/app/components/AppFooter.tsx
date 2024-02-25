@@ -53,10 +53,11 @@ const AppFooter = () => {
           <div className='col-12 col-md-6 col-lg-3 mb-3'>
             <h1 className='fw-bold text-white'>Explore</h1>
             <div className='list-group list-group-flush '>
-              {exploreLinks.map((explore) => (
+              {exploreLinks.map((explore, index) => (
                 <a
                   href={explore.link}
                   className='list-group-item bg-primary ps-0 text-white fw-light border-0'
+                  key={index}
                 >
                   {explore.label}
                 </a>
@@ -66,10 +67,11 @@ const AppFooter = () => {
           <div className='col-12 col-md-6 col-lg-3 mb-3'>
             <h1 className='fw-bold text-white'>Sectors</h1>
             <div className='list-group list-group-flush '>
-              {exploreLinks.map((explore) => (
+              {exploreLinks.map((explore, index) => (
                 <a
                   href={explore.link}
                   className='list-group-item bg-primary ps-0 text-white fw-light border-0'
+                  key={index}
                 >
                   {explore.label}
                 </a>
@@ -79,10 +81,11 @@ const AppFooter = () => {
           <div className='col-12 col-md-6 col-lg-3 mb-3'>
             <h1 className='fw-bold text-white'>Services</h1>
             <div className='list-group list-group-flush '>
-              {exploreLinks.map((explore) => (
+              {exploreLinks.map((explore, index) => (
                 <a
                   href={explore.link}
                   className='list-group-item bg-primary ps-0 text-white fw-light border-0'
+                  key={index}
                 >
                   {explore.label}
                 </a>

@@ -60,7 +60,10 @@ const page = () => {
             {/* <JobSlider jobs={jobs} /> */}
             <div className='row justify-content-center justify-content-xl-between'>
               {jobs.map((job, index = 1) => (
-                <div className='mb-3 col-12 col-md-6 col-xl d-flex justify-content-center'>
+                <div
+                  className='mb-3 col-12 col-md-6 col-xl d-flex justify-content-center'
+                  key={job.order}
+                >
                   <Job
                     {...job}
                     color={
