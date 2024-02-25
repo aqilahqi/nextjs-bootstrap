@@ -1,8 +1,10 @@
 import './styles/globals.scss';
+import 'material-symbols';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import BootstrapClient from './components/BootstrapClient';
 import AppNavbar from './components/AppNavbar';
+import AppFooter from './components/AppFooter';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,6 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <AppNavbar />
         {children}
+        <AppFooter />
         <BootstrapClient />
       </body>
     </html>
