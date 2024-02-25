@@ -58,14 +58,20 @@ const page = () => {
         <div className='latest-jobs bg-light py-5'>
           <div className='container'>
             {/* <JobSlider jobs={jobs} /> */}
-            <div className='d-flex justify-content-between'>
+            <div className='row justify-content-center justify-content-xl-between'>
               {jobs.map((job, index = 1) => (
-                <Job
-                  {...job}
-                  color={
-                    index % 2 ? 'primary' : index % 3 ? 'tertiary' : 'secondary'
-                  }
-                />
+                <div className='mb-3 col-12 col-md-6 col-xl d-flex justify-content-center'>
+                  <Job
+                    {...job}
+                    color={
+                      index % 2
+                        ? 'primary'
+                        : index % 3
+                        ? 'tertiary'
+                        : 'secondary'
+                    }
+                  />
+                </div>
               ))}
             </div>
             <div className='d-flex mt-3 justify-content-between'>

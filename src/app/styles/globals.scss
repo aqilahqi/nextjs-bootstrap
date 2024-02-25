@@ -73,7 +73,10 @@ button {
             }
         }
         .card-body {
-            padding: 40px;
+            padding: 30px 26px;
+            @include media-breakpoint-up(lg) {
+                padding: 40px;
+            }
         }
     }
 }

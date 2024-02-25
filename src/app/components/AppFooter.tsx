@@ -30,8 +30,8 @@ const AppFooter = () => {
   return (
     <div className='footer bg-primary'>
       <div className='container'>
-        <div className='d-flex'>
-          <div className='col-12 col-md-6 col-lg-3'>
+        <div className='row'>
+          <div className='col-12 col-md-6 col-lg-3 mb-5'>
             <h3 className='fw-bold text-white mb-4 fs-5'>
               Software Recruitment co.
             </h3>
@@ -50,7 +50,7 @@ const AppFooter = () => {
               </a>
             </div>
           </div>
-          <div className='col-12 col-md-6 col-lg-3'>
+          <div className='col-12 col-md-6 col-lg-3 mb-3'>
             <h1 className='fw-bold text-white'>Explore</h1>
             <div className='list-group list-group-flush '>
               {exploreLinks.map((explore) => (
@@ -63,7 +63,7 @@ const AppFooter = () => {
               ))}
             </div>
           </div>
-          <div className='col-12 col-md-6 col-lg-3'>
+          <div className='col-12 col-md-6 col-lg-3 mb-3'>
             <h1 className='fw-bold text-white'>Sectors</h1>
             <div className='list-group list-group-flush '>
               {exploreLinks.map((explore) => (
@@ -76,7 +76,7 @@ const AppFooter = () => {
               ))}
             </div>
           </div>
-          <div className='col-12 col-md-6 col-lg-3'>
+          <div className='col-12 col-md-6 col-lg-3 mb-3'>
             <h1 className='fw-bold text-white'>Services</h1>
             <div className='list-group list-group-flush '>
               {exploreLinks.map((explore) => (
