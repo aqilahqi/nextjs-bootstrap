@@ -8,7 +8,7 @@ $circle-size:190px;
         position: relative;
         overflow: hidden;
         @include media-breakpoint-down(sm) {
-height: calc(100vh - 84px);
+            height: calc(100vh - 84px);
         }
         @include media-breakpoint-up(lg) {
             height: calc(100vh - 84px);
