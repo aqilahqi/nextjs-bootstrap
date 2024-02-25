@@ -5,7 +5,11 @@ const page = () => {
   return (
     <div>
       <div>
-        <Banner />
+        <Banner
+          title='Elevate your career'
+          subtitle='Software Recruitment Specialists'
+          image='/images/banner-image-1.png'
+        />
       </div>
     </div>
   );

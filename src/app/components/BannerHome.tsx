@@ -14,13 +14,13 @@ const BannerHome = (props: Props) => {
       <div className='circle bottom bg-secondary' />
       <div className='container content d-md-flex align-items-center'>
         <img
-          src='/images/banner-image-1.png'
+          src={`${image}`}
           className='img-fluid order-2 mb-3 mb-lg-0'
           alt='image'
         />
         <div className='me-2 me-md-4 pe-lg-3 col-12 col-md-6 col-lg'>
-          <p className='fw-regular'>Software Recruitment Specialists</p>
-          <h1 className='fw-bold mb-3'>Elevate your career</h1>
+          <p className='fw-regular'>{subtitle}</p>
+          <h1 className='fw-bold mb-3'>{title}</h1>
           <div className='input-group mb-3'>
             <input
               type='text'
